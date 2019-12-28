@@ -1,1 +1,1 @@
-![Test](app/src/main/res/drawable/bg2.png)
+![Test](app/src/main/res/drawable/1.png)
