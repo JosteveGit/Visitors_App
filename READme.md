@@ -1,3 +1,11 @@
+<h1>SPLASH SCREEN</h1>
+  
+  
+![Test](app/src/main/res/drawable/0.png)
+
+  
+  
+
 <h1>FIRST SCREEN</h1>
 
 
