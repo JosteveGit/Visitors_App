@@ -20,7 +20,7 @@
 <h1>TAKE PICTURE</h1>
   
   
-![Test](app/src/main/res/drawable/3.png)
+![Test](tao.png)
 
 
 <h1>GENERATE CARD WITH BAR CODE</h1>
