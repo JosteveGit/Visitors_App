@@ -1,0 +1,1 @@
+class DateTimeComparison(val fromDate: String, val toDate: String, val fromTime: String, val toTime: String)

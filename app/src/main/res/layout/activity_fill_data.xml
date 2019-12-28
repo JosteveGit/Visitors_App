@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FillDataActivity"
+    android:orientation="vertical"
+    android:background="@drawable/background_image">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/blue"
+        android:padding="8dp"
+        android:gravity="center_vertical">
+        <!--Logo-->
+
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/bowenlogo"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/school_name"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="30sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Excellence and Godliness"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Please fill the field below"
+            android:paddingEnd="40dp"
+            android:paddingBottom="3dp"
+            android:paddingTop="3dp"
+            android:paddingStart="5dp"
+            android:layout_gravity="start"
+            android:background="@color/halfblue"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:layout_marginBottom="8dp"
+            tools:ignore="RtlCompat" />
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <EditText
+                    android:lines="1"
+                    android:id="@+id/fullName"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="15dp"
+                    android:paddingStart="25dp"
+                    android:background="@drawable/values_bg"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Full Name"
+                    android:textSize="25sp"
+                    tools:ignore="RtlCompat"
+                    android:layout_marginBottom="30dp"/>
+
+                <EditText
+                    android:lines="1"
+                    android:id="@+id/contactAddress"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="15dp"
+                    android:paddingStart="25dp"
+                    android:background="@drawable/values_bg"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Contact Address"
+                    android:textSize="25sp"
+                    tools:ignore="RtlCompat"
+                    android:layout_marginBottom="30dp"/>
+
+                <EditText
+                    android:lines="1"
+                    android:inputType="numberSigned"
+                    android:id="@+id/carRegNumer"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="15dp"
+                    android:paddingStart="25dp"
+                    android:background="@drawable/values_bg"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Car Reg Number(optional)"
+                    android:textSize="25sp"
+                    tools:ignore="RtlCompat"
+                    android:layout_marginBottom="30dp"/>
+
+                <EditText
+                    android:lines="1"
+                    android:id="@+id/unitOrDept"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="15dp"
+                    android:paddingStart="25dp"
+                    android:background="@drawable/values_bg"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Unit/Department of Visit"
+                    android:textSize="25sp"
+                    tools:ignore="RtlCompat"
+                    android:layout_marginBottom="30dp"/>
+
+                <EditText
+                    android:lines="1"
+                    android:id="@+id/whoToSee"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="15dp"
+                    android:paddingStart="25dp"
+                    android:background="@drawable/values_bg"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Who to see"
+                    android:textSize="25sp"
+                    tools:ignore="RtlCompat"
+                    android:layout_marginBottom="20dp"/>
+                <LinearLayout
+                    android:layout_marginBottom="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button"
+                    android:padding="10dp"
+                    android:gravity="center"
+                    android:layout_gravity="end"
+                    android:id="@+id/nextToImageCaputeButton">
+                    <TextView
+                        android:layout_marginStart="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Next"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"
+                        android:textSize="25sp"
+                        tools:ignore="RtlCompat" />
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/ic_next"
+                        android:scaleType="fitXY"
+                        />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

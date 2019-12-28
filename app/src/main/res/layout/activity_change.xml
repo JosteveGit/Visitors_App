@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ChangeActivity"
+    android:padding="20dp"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/bg4">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Details"
+        android:layout_marginBottom="10dp"
+        android:textSize="30sp"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="@drawable/form_design"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="20dp">
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_marginBottom="5dp"
+                    android:background="@color/white"
+                    android:hint="Name"
+                    app:boxBackgroundColor="@color/kind_of_white"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox">
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:id="@+id/name"
+                        android:layout_height="wrap_content" />
+                </com.google.android.material.textfield.TextInputLayout>
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_marginBottom="5dp"
+                    app:boxBackgroundColor="@color/kind_of_white"
+                    android:background="@color/white"
+                    android:hint="Gender"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"
+                    >
+                    <AutoCompleteTextView
+                        android:id="@+id/gender"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                </com.google.android.material.textfield.TextInputLayout>
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_marginBottom="5dp"
+                    app:boxBackgroundColor="@color/kind_of_white"
+                    android:background="@color/white"
+                    android:hint="Phone Number"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox">
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/phoneNumber"
+                        android:inputType="phone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                </com.google.android.material.textfield.TextInputLayout>
+                <com.google.android.material.textfield.TextInputLayout
+                    android:background="@color/white"
+                    android:hint="Home Address"
+                    android:layout_marginBottom="5dp"
+                    app:boxBackgroundColor="@color/kind_of_white"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox">
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/address"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                </com.google.android.material.textfield.TextInputLayout>
+                <com.google.android.material.textfield.TextInputLayout
+                    app:boxBackgroundColor="@color/kind_of_white"
+                    android:layout_marginBottom="5dp"
+                    android:hint="State of Origin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox">
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:id="@+id/stateOfOrigin"
+                        android:layout_height="wrap_content"/>
+                </com.google.android.material.textfield.TextInputLayout>
+                <com.google.android.material.textfield.TextInputLayout
+                    android:background="@color/white"
+                    app:boxBackgroundColor="@color/kind_of_white"
+                    android:layout_marginBottom="5dp"
+                    android:hint="Nationality"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox">
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/nationality"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                </com.google.android.material.textfield.TextInputLayout>
+                <com.google.android.material.textfield.TextInputLayout
+                    android:background="@color/white"
+                    app:boxBackgroundColor="@color/kind_of_white"
+                    android:layout_marginBottom="5dp"
+                    android:hint="Occupation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox">
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/occupation"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                </com.google.android.material.textfield.TextInputLayout>
+                <com.google.android.material.textfield.TextInputLayout
+                    android:background="@color/white"
+                    android:hint="Arriving from"
+                    app:boxBackgroundColor="@color/kind_of_white"
+                    android:layout_marginBottom="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox">
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/arrivingFrom"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                </com.google.android.material.textfield.TextInputLayout>
+                <com.google.android.material.textfield.TextInputLayout
+                    app:boxBackgroundColor="@color/kind_of_white"
+                    android:layout_marginBottom="5dp"
+                    android:background="@color/white"
+                    android:hint="Purpose of Visit to Iwo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox">
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/purposeOfVisit"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                </com.google.android.material.textfield.TextInputLayout>
+                <com.google.android.material.textfield.TextInputLayout
+                    app:boxBackgroundColor="@color/kind_of_white"
+                    android:background="@color/white"
+                    android:hint="Accompany With"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox">
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/accompanyWith"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/proceedButton"
+            style="@style/Widget.MaterialComponents.Button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:layout_marginTop="7dp"
+            android:background="@color/blue"
+            android:padding="10dp"
+            android:text="Proceed to image capture"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>
+
+
+
+    <!--    <LinearLayout-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:background="@color/blue"-->
+    <!--        android:padding="8dp"-->
+    <!--        android:gravity="center_vertical">-->
+    <!--        &lt;!&ndash;Logo&ndash;&gt;-->
+
+    <!--        <ImageView-->
+    <!--            android:layout_width="70dp"-->
+    <!--            android:layout_height="70dp"-->
+    <!--            android:scaleType="centerCrop"-->
+    <!--            android:src="@drawable/bowenlogo"-->
+    <!--            android:layout_marginStart="5dp"-->
+    <!--            android:layout_marginEnd="5dp"/>-->
+
+    <!--        <LinearLayout-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:orientation="vertical"-->
+    <!--            >-->
+
+    <!--            <TextView-->
+    <!--                android:layout_width="wrap_content"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:text="@string/school_name"-->
+    <!--                android:textColor="@color/white"-->
+    <!--                android:textStyle="bold"-->
+    <!--                android:textSize="30sp" />-->
+
+    <!--            <TextView-->
+    <!--                android:layout_width="wrap_content"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:text="Excellence and Godliness"-->
+    <!--                android:textColor="@color/white"-->
+    <!--                android:textSize="20sp" />-->
+
+    <!--        </LinearLayout>-->
+    <!--    </LinearLayout>-->
+
+
+
+
+
+
+
+
+
+    <!--    <LinearLayout-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="match_parent"-->
+    <!--        android:gravity="center"-->
+    <!--        android:orientation="vertical"-->
+    <!--        android:padding="20dp"-->
+    <!--        >-->
+
+    <!--        <TextView-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:text="Please fill below"-->
+    <!--            android:paddingEnd="40dp"-->
+    <!--            android:paddingBottom="3dp"-->
+    <!--            android:paddingTop="3dp"-->
+    <!--            android:paddingStart="5dp"-->
+    <!--            android:layout_gravity="start"-->
+    <!--            android:background="@color/halfblue"-->
+    <!--            android:textSize="15sp"-->
+    <!--            android:textColor="@color/white"-->
+    <!--            android:layout_marginBottom="8dp"-->
+    <!--            tools:ignore="RtlCompat" />-->
+
+
+    <!--            <EditText-->
+    <!--                android:id="@+id/phoneNumber"-->
+    <!--                android:inputType="phone"-->
+    <!--                android:paddingTop="15dp"-->
+    <!--                android:paddingBottom="15dp"-->
+    <!--                android:paddingStart="25dp"-->
+    <!--                android:background="@drawable/values_bg"-->
+    <!--                android:layout_width="match_parent"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:hint="Enter Phone Number"-->
+    <!--                android:textSize="25sp"-->
+    <!--                tools:ignore="RtlCompat"-->
+    <!--                android:lines="1"/>-->
+
+    <!--        <LinearLayout-->
+    <!--            android:layout_marginTop="50dp"-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:background="@drawable/button"-->
+    <!--            android:padding="10dp"-->
+    <!--            android:gravity="center"-->
+    <!--            android:layout_gravity="end"-->
+    <!--            android:id="@+id/nextToFillDataButton">-->
+    <!--            <TextView-->
+    <!--                android:layout_marginStart="5dp"-->
+    <!--                android:layout_width="wrap_content"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:text="Proceed"-->
+    <!--                android:textStyle="bold"-->
+    <!--                android:textColor="@color/white"-->
+    <!--                android:textSize="25sp"-->
+    <!--                tools:ignore="RtlCompat" />-->
+    <!--            <ImageView-->
+    <!--                android:layout_width="30dp"-->
+    <!--                android:layout_height="30dp"-->
+    <!--                android:src="@drawable/ic_next"-->
+    <!--                android:scaleType="fitXY"-->
+    <!--                />-->
+    <!--        </LinearLayout>-->
